@@ -1,0 +1,238 @@
+body {
+    background-color: #2b1a3e !important;
+  }
+  
+  #navbar{
+    position: fixed;
+    width: 100%;
+    margin-top: -240px;
+    z-index: 2;
+  }
+  
+  #navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: #e85067;
+    line-height: 80px;
+    margin: -10px;
+  }
+  
+  #navbar li{
+    text-align: center;
+    width: 150px;
+  }
+  
+  #navbar li:hover{
+    background-color: #0b1923;
+  }
+  
+  #navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oxygen', sans-serif !important;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #welcome-section{
+    text-align: center;
+    height: 50vh;
+    margin-top: 250px;
+  }
+  
+  #welcome-section h1{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-size: 80px !important;
+    margin-bottom: 5px;
+  }
+  
+  #welcome-section p{
+    color: #a9aecb;
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 20px !important;
+    margin-bottom: 100px;
+  }
+  
+  #projects{
+    color: white;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 40px !important;
+    text-align: center;
+    height: 100%;
+    background-color: #1c2045;
+    border-top: 1vh solid #a9aecb;
+    border-bottom: 1vh solid #a9aecb;
+    margin: 50px -10px 10px -10px;
+  }
+  
+  /*#projects hr{
+    width: 520px;
+    margin-top:-2%;
+  }*/
+  
+  .project-intro{
+    text-align: center;
+    margin-top: 120px;
+  }
+  
+  /*.project-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 20% 10% 20%;
+  }*/
+  
+  #project-carousel{
+    display: grid;
+    position: relative;
+    width: 50%; 
+    z-index: 1;
+    margin-left: 25%;
+    padding-bottom: 5%;
+  }
+      
+  .item img {
+    max-width: 100%;
+  }
+  
+  .project-tile{
+    background-color: #0b1923;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .project-tile a:hover{
+    color: #e85067;
+  }
+  
+  .project-tile a{
+    color: #a9aecb;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+  }
+  
+  /*.project-screenshot{
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 5px;
+  }*/
+  
+  .carousel-control-prev {
+      left: 0;
+      z-index: 3;
+  }
+  
+  .carousel-control-next {
+      right: 0;
+      z-index: 3;
+  }
+  
+  #contactme{
+    color: white;
+    font-family: 'Oxygen', sans-serif !important;
+    font-size: 40px !important;
+    text-align: center;
+    height: 65vh;  
+  }
+  
+  #contactme ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  #contactme ul li a{
+    color: white;
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 20px !important;
+    text-decoration: none;
+  }
+  
+  #contactme ul li a:hover{
+    color: #e85067;
+  }
+  
+  #contactme-intro{
+    margin-top: 140px;
+  }
+  
+  #contact-details{
+    margin-top: 50px;
+  }
+  
+  #contactme hr{
+    width: 100%;
+    border-color: #e85067;
+    /*margin-top: 270px; */
+  }
+  
+  footer p{
+    color: white;
+    font-family: 'Comfortaa', cursive !important;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 1000px){
+    
+    #navbar li{
+      width: 100%;
+    }
+    
+    #navbar li:hover{
+      width: 100%;
+      background-color: #0b1923;
+    }
+    
+    #welcome-section h1{
+      font-size: 50px !important;
+    }
+    
+    #projects{
+      height: 90%;
+    }
+    
+    .project-intro{
+      font-size: 25px;
+    }
+    
+    #projects hr{
+      width: 90%;
+    }  
+    
+    #project-carousel{
+      width: 80%;
+      margin: 10% 0% 10% 10%;
+      padding-left: 10%;
+      padding-bottom: 10%;
+    }
+    
+    .project-tile{
+      width: 80%;
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    #contactme hr{
+      margin-top: 40%;
+    }
+    
+    #contactme-intro{
+      font-size: 30px;
+    }
+    
+    #contactme ul{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: -10%;
+    }
+    
+  }
