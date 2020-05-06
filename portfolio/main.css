@@ -168,10 +168,9 @@ body {
     margin-top: 50px;
   }
   
-  #contactme hr{
+  hr{
     width: 100%;
     border-color: #e85067;
-    /*margin-top: 270px; */
   }
   
   footer p{
