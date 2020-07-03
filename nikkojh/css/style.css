@@ -1,13 +1,12 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 nav{
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    /* width: 160px; Set the width of the sidebar */
-    width: 20%;
+    width: 25%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -17,7 +16,12 @@ nav{
     padding-top: 20px;
 }
 
-nav a{
+#navLogo{
+    padding: 10%;
+    width: 70%;
+}
+
+nav li a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -26,12 +30,34 @@ nav a{
 }
 
 main {
-    margin-left: 20%; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 25%; /* Same as the width of the sidebar */
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bookNowButton{
+    width: 50%;
+}
+
+#landingPage{
+    background-image: url("../images/godaddybg.png");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    width: 80%; /* Remaining width for the page (minus nav width) */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding: 10%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     nav {padding-top: 15px;}
-    nav a {font-size: 18px;}
+    nav li a {font-size: 18px;}
 }
