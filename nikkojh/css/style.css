@@ -2,6 +2,7 @@ body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 nav{
@@ -21,9 +22,10 @@ nav{
     width: 70%;
 }
 
-nav li a{
+nav ul li a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
+    text-align: left;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -51,13 +53,27 @@ h1{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     padding: 10%;
-    text-align: center;
     color: #ffffff;
-    margin: 0%;
+}
+
+#aboutUs{
+    width: 40%;
+    padding: 10%;
+    margin-left:20%;
+}
+
+section ul li{
+    text-align: left;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    nav {padding-top: 15px;}
-    nav li a {font-size: 18px;}
+    nav {
+        padding-top: 15px;
+        height: 25%; /* remove this if you want "auto" height */
+        width: 100%; /* Set the width of the top menu */
+    }
+    nav ul li a{font-size: 18px;}
+    h1{font-size: 10px;}
+    #aboutUs{width:90%;margin-left:0%;}
 }
