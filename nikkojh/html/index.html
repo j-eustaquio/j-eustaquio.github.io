@@ -6,10 +6,12 @@
   <meta name="author" content="Jhimlie Eustaquio">
   <meta charset="UTF-8">
   <meta name="description" content="Nikkojh Solutions Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Link own css -->
   <link rel="stylesheet" href="../css/style.css">
   <!-- Others -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,24 +19,61 @@
   <main>
 
     <nav>
-      <img src="../images/nikkojh-inverse.png" alt="Nikkojh Solutions Inc." width="90%">
-      <ul>
-        <li><a href="#">Home</a></li>
+      <img id="navLogo" src="../images/nikkojh-inverse.png" alt="Nikkojh Solutions Inc. logo">
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
+      <a id="menuIcon" href="javascript:void(0);" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
 
-    <section>
-      <p>Experienced, Personalized IT Consulting</p>
-      <p>Let's build the infrastructure for your success!</p>
-      <input type="button" value="Book Now"/>
+    <section id="landingPage">
+      <h1>Experienced, <br/> Personalized IT <br/> Consulting</h1>
+      <h2>Let's build the infrastructure for your success!</h2>
+      <div class="bookNowButton">
+        <img src="../images/booknow.png" alt="book now button" width="80%">
+        <img src="../images/booknowHover.png" class="img-active" alt="book now button active" width="80%">
+      </div>
     </section>
+
+    <section id="aboutUs">
+      <h3>ABOUT US</h3>
+      <div>
+        <h4>Our Experience</h4>
+        <p>After more than 10 years in the IT industry, we decided to alter direction. Now, we share use our experience to help others. Our ramp up process is designed to empower your technical team and outfit them with the tools they need to succeed. Ask us about:
+          <ul>
+            <li>Java-based frameworks</li>
+            <li>Open-source technologies</li>
+            <li>Cloud-based development</li>
+            <li>End-to-end integration</li>
+            <li>Networks and systems security</li>
+            <li>Database and warehouse technology</li>
+          </ul>
+        </p>
+      </div>
+      <br/>
+      <div>
+        <h4>Our Approach</h4>
+        <p>Our service includes a comprehensive consult to help identify gaps and opportunities, a comprehensive report that includes a project plan with timelines and milestones, a cost analysis, and a schedule. We also offer a suite of quality products that will help you get there quickly and smoothly. </p>
+      </div>
+      <br/>
+      <div>
+        <h4>Why Us?</h4>
+        <p>Business mentors are key—that’s why when it comes to client selection, we’re choosy. We want to give each of you the time and guidance they deserve. We didn’t get there alone, and we want to share the journey with you. Call us today.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div><h5>&copy2020 NIKKOJH SOLUTIONS INC. <br/> ALL RIGHTS RESERVED. </h5></div>
+    </footer>
 
   </main>
   
   <!-- Link JavaScript file -->
-  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/openMenu.js"></script>
 </body>
 
 </html>
