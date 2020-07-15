@@ -1,5 +1,6 @@
 /* Default styles for Desktop View*/
-body{
+
+body {
     font-family: 'Raleway', sans-serif;
     width: 100%;
     margin: auto;
@@ -7,35 +8,32 @@ body{
     letter-spacing: 0.1em;
 }
 
-nav{
+nav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 25%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;/* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;/* Stay on top */
+    top: 0;/* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: #111;/* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
 
-#navLogo{
+#navLogo {
     padding: 20% 0% 20% 0%;
     width: 70%;
 }
 
-#navLinks{
+#navLinks {
     /* display: block; */
     padding-top: 30px;
     list-style-type: none;
 }
 
-/* Hide Menu Icon on Desktop View */
-#menuIcon i {
-    display: none;
-}
+#menuIcon i { display: none;} /* Hide Menu Icon on Desktop View */
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     text-align: left;
     font-size: 18px;
@@ -44,17 +42,16 @@ nav ul li a{
     padding: 0% 0% 7% 7%;
 }
 
+
 /* When you mouse over the navigation links, change their color */
 nav ul li a:hover {
     color: #f1f1f1;
     font-weight: bolder;
 }
 
-main {
-    margin-left: 25%; /* Same as the width of the sidebar */
-}
+main {margin-left: 25%;}/* Same as the width of the sidebar */
 
-h1{
+h1 {
     font-size: 50px;
     font-weight: bold;
 }
@@ -75,77 +72,129 @@ h1{
 
 .bookNowButton:hover .img-active {
     display: inline;
-    margin-left:10%;
+    margin-left: 10%;
 }
 
-#landingPage{
-    background-image: url("../images/godaddybg.png");
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    width: 80%; /* Remaining width for the page (minus nav width) */
+#landingPage {
+    background-image: url("../images/coverphoto.png");
+    background-color: #111; /* Used if the image is unavailable */
+    height: 500px;/* You must set a specified height */
+    width: 80%;/* Remaining width for the page (minus nav width) */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;/* Do not repeat the image */
+    background-size: cover;/* Resize the background image to cover the entire container */
     padding: 10%;
     color: #ffffff;
 }
 
-#aboutUs{
-    width: 40%;
-    padding: 10%;
-    margin-left:20%;
+#tagline{
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10%; 
+    border-radius: 5px;
+    margin: -10%;
 }
 
-section ul li{
+
+
+#aboutUs {
+    width: 40%;
+    padding: 10%;
+    margin-left: 20%;
+}
+
+section ul li {
     text-align: left;
 }
 
-footer h5{
+
+/* Contact Form CSS - Start */
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #FFFFFF;
+    background-image: url("../images/gethelp.png");
+    height: 100px;
+    width: 40%;
+    background-position: center;/* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;/* Resize the background image to cover the entire container */
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-image: url("../images/gethelphover.png");
+}
+
+#contactForm {
+    padding: 5% 10% 5% 10%;
+}
+
+#pageLogo {
+    width: 20%;
+}
+
+
+/* Contact Form CSS - End */
+
+footer h5 {
     padding: 5%;
     font-weight: lighter;
     letter-spacing: 0.3em;
 }
 
-/* On smaller screens, where width is less than 600px, change the style of the sidebar (less padding and a smaller font size) */
-@media only screen and (max-width: 600px) {
 
+/* On smaller screens, where width is less than 600px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media only screen and (max-width: 600px) {
     nav {
         position: fixed;
-        height: auto; /* remove this if you want "auto" height */
+        height: auto;/* remove this if you want "auto" height */
         width: 100%; /* Set the width of the top menu */
     }
-    #navLogo{
-        width:30%;
-        margin-top:-20%;
-        padding-bottom:15px;
+    #navLogo {
+        width: 30%;
+        margin-top: -20%;
+        padding-bottom: 15px;
     }
-    #navLinks{display: none;} /* Intially hide Nav Links on mobile view */
-    nav ul li a{
-        text-align:center;
-        margin-left:-15%;
+    #navLinks { display: none;}/* Intially hide Nav Links on mobile view */
+    nav ul li a {
+        text-align: center;
+        margin-left: -15%;
     }
     #menuIcon i {
         display: block;
         color: #FFFFFF;
         font-size: 25px;
         padding: 15px;
-        position: fixed; /* Fixed menuIcon (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 5%; /* Stay at the top */
-        right: 5%; 
+        position: fixed;/* Fixed menuIcon (stay in place on scroll) */
+        z-index: 1;/* Stay on top */
+        top: 5%;/* Stay at the top */
+        right: 5%;
     }
-    main { margin-left: -25%; /* Same as the width of the sidebar */ }
-    #landingPage{
-        height: auto; 
-        width:60%; 
+    main {margin-left: -25%;} /* Same as the width of the sidebar */
+    #landingPage {
+        height: auto;
+        width: 60%;
         padding-top: 20%;
-        margin-top: 20%; 
-        margin-left:20%;
+        margin-top: 20%;
+        margin-left: 20%;
     }
-    h1{font-size: 28px;}
-    h2{font-size: 16px;}
+    h1 {font-size: 28px;}
+    h2 {font-size: 16px;}
+    #tagline{margin-top:-25%}
     .bookNowButton {width: 100%}
-    #aboutUs{width:60%;}
-    section ul li{width: 100%}
-    footer{margin-left:20%;}
+    #aboutUs {width: 60%;}
+    section ul li {width: 100%}
+    footer {margin-left: 20%;}
 }
