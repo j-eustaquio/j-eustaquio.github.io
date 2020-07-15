@@ -146,5 +146,6 @@ footer h5{
     h2{font-size: 16px;}
     .bookNowButton {width: 100%}
     #aboutUs{width:60%;}
+    section ul li{width: 100%}
     footer{margin-left:20%;}
 }
