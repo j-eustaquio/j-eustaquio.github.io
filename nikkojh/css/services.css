@@ -1,0 +1,179 @@
+html, body{
+
+    margin: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#sideBar{
+    height: 100%;
+    width: 23.4%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    overflow-x: hidden;
+    padding-top: 8.05%;
+    background-color: #161616;
+    float: left;
+}
+
+#sideBarSection {
+    padding: 6px 8px 6px 16px;
+    text-align: left;
+    font-size: 24px;
+    color: #818181;
+    font-weight: lighter;
+
+}
+#links{
+    padding-top: 21px;
+    line-height: 18px;
+}
+
+
+#links a {
+
+    padding-left: 32px;
+    font-size: 17px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+#sideBarSection a:hover{
+    color: #818181;
+}
+
+
+#sideBarLogo{
+
+    padding-bottom: 30%;
+    padding-left:17.5%;
+}
+#accountButton{
+    margin-top: 63px;
+    margin-left: 37px;
+}
+
+h3{
+    color: #595959;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 73px;
+    padding-left: 470px;
+
+}
+#mainScreen {
+    padding: 0;
+    margin-left: 23.4%;
+    float: left;
+
+}
+
+
+
+#leftParagraph{
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 0px 10px 50px ;
+    margin-right: 50%;
+    border-right: 1px solid #CCCCCC;
+    height: 500px;
+    position: absolute;
+    float: left;
+}
+#leftParagraphHeader{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+#leftParagraphText{
+    font-size: 25px;
+    line-height:30px;
+    margin-right: 40px;
+    color: #5E5E73;
+    margin-bottom: 60px;
+
+}
+
+#midParagraph {
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 0px 10px 50px ;
+    margin-right: 25%;
+    margin-left: 25%;
+    position: absolute;
+    border-right: 1px solid #CCCCCC;
+    height: 500px;
+
+}
+#midParagraphHeader{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+#midParagraphText {
+    font-size: 25px;
+    line-height: 30px;
+    margin-right: 40px;
+    color: #5E5E73;
+    margin-bottom: 60px;
+
+}
+
+#rightParagraph {
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px 0px 10px 50px ;
+    margin-left: 50%;
+    position:absolute;
+
+}
+#rightParagraphHeader{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+#rightParagraphText {
+    font-size: 25px;
+    color: #5E5E73;
+    line-height: 30px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+
+}
+
+
+.moreLink {
+    margin-right: 45px;
+    padding-top: 50px;
+    padding-left: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    color: #889395;
+    border-bottom: 2px solid  #889395;
+}
+#rightParagraph a{
+    text-decoration: none;
+}
+#midParagraph a{
+    text-decoration: none;
+}#leftParagraph a{
+     text-decoration: none;
+ }
+
+
+
+
+
+
+
+

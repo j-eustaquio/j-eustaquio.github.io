@@ -1,3 +1,4 @@
+/* Default styles for Desktop View*/
 body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -24,7 +25,7 @@ nav{
 }
 
 #navLinks{
-    display: block; /* Hide Nav Links on page load*/
+    /* display: block; */
     padding-top: 30px;
     list-style-type: none;
 }
@@ -35,12 +36,12 @@ nav{
 }
 
 nav ul li a{
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
     text-align: left;
     font-size: 18px;
     color: #818181;
     display: block;
+    padding: 0% 0% 7% 7%;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -107,29 +108,42 @@ footer h5{
 
 /* On smaller screens, where width is less than 600px, change the style of the sidebar (less padding and a smaller font size) */
 @media only screen and (max-width: 600px) {
-    #navLogo{width:30%;margin-top:-20%;}
+
     nav {
-        padding: 15px;
-        position: relative;
-        height: 100px; /* remove this if you want "auto" height */
+        position: fixed;
+        height: auto; /* remove this if you want "auto" height */
         width: 100%; /* Set the width of the top menu */
     }
-    /* nav ul li a{font-size: 18px;} */
-    #navLinks{display: none;}
+    #navLogo{
+        width:30%;
+        margin-top:-20%;
+        padding-bottom:15px;
+    }
+    #navLinks{display: none;} /* Intially hide Nav Links on mobile view */
+    nav ul li a{
+        text-align:center;
+        margin-left:-15%;
+    }
     #menuIcon i {
+        display: block;
         color: #FFFFFF;
         font-size: 25px;
         padding: 15px;
-        position: fixed;
+        position: fixed; /* Fixed menuIcon (stay in place on scroll) */
         z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        right: 0;
+        top: 5%; /* Stay at the top */
+        right: 5%; 
     }
     main { margin-left: -25%; /* Same as the width of the sidebar */ }
+    #landingPage{
+        height: auto; 
+        width:60%; 
+        margin-top: 20%; 
+        margin-left:20%;
+    }
     h1{font-size: 35px;}
     h2{font-size: 16px;}
-    #landingPage{margin-left:10%;}
     .bookNowButton {width: 70%}
-    #aboutUs{width:60%;margin-left:20%;}
+    #aboutUs{width:60%;}
     footer{margin-left:20%;}
 }
