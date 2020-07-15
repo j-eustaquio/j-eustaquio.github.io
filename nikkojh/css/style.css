@@ -15,7 +15,7 @@ nav {
     z-index: 1;/* Stay on top */
     top: 0;/* Stay at the top */
     left: 0;
-    background-color: #111;/* Black */
+    background-color:rgb(0, 0, 0);/* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
@@ -31,7 +31,7 @@ nav {
     list-style-type: none;
 }
 
-#menuIcon i { display: none;} /* Hide Menu Icon on Desktop View */
+#menuIcon i { display: none; color: rgb(0, 0, 0);} /* Hide Menu Icon on Desktop View */
 
 nav ul li a {
     text-decoration: none;
@@ -39,7 +39,7 @@ nav ul li a {
     font-size: 18px;
     color: #818181;
     display: block;
-    padding: 0% 0% 7% 7%;
+    padding: 7%;
 }
 
 
@@ -95,20 +95,21 @@ h1 {
     margin: -10%;
 }
 
-
-
 #aboutUs {
     width: 40%;
     padding: 10%;
     margin-left: 20%;
 }
 
-section ul li {
-    text-align: left;
-}
-
+section ul li {text-align: left;}
 
 /* Contact Form CSS - Start */
+#contactUs{margin:10%;}
+#getStarted{
+    width: 60%;
+    padding: 10%;
+    margin-left: 10%;
+}
 input[type=text],
 textarea {
     width: 100%;
@@ -132,19 +133,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-image: url("../images/gethelphover.png");
-}
+input[type=submit]:hover {background-image: url("../images/gethelphover.png");}
 
-#contactForm {
-    padding: 5% 10% 5% 10%;
-}
-
-#pageLogo {
-    width: 20%;
-}
-
-
+#contactForm {padding: 5% 10% 5% 10%;}
+#pageLogo { width: 20%;}
 /* Contact Form CSS - End */
 
 footer h5 {
@@ -197,4 +189,7 @@ footer h5 {
     #aboutUs {width: 60%;}
     section ul li {width: 100%}
     footer {margin-left: 20%;}
+    #contactUs { margin: 30% 10% 20% 25%;}
+    input[type=submit] { width: 100%; }
+    #pageLogo { width: 50%; }
 }
