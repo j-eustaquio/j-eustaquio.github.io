@@ -1,7 +1,8 @@
 /* Default styles for Desktop View*/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -17,36 +18,38 @@ nav {
     left: 0;
     background-color:rgb(0, 0, 0);/* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding: 26px 8px 6px 16px; /* padding-top: 20px; */
+    text-align: left;
+    font-size: 24px;
 }
 
 #navLogo {
-    padding: 20% 0% 20% 0%;
     width: 70%;
+    padding: 20% 0% 20% 0%;
 }
 
 #navLinks {
     /* display: block; */
-    padding-top: 30px;
     list-style-type: none;
 }
 
 #menuIcon i { display: none; color: rgb(0, 0, 0);} /* Hide Menu Icon on Desktop View */
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     text-align: left;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: lighter;
     color: #818181;
-    display: block;
-    padding: 7%;
+    line-height: 20px;
+    padding-top: 21px;
 }
 
 
 /* When you mouse over the navigation links, change their color */
 nav ul li a:hover {
     color: #f1f1f1;
-    font-weight: bolder;
 }
 
 main {margin-left: 25%;}/* Same as the width of the sidebar */
@@ -54,6 +57,13 @@ main {margin-left: 25%;}/* Same as the width of the sidebar */
 h1 {
     font-size: 50px;
     font-weight: bold;
+}
+
+h3{
+    color: #595959;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5em;
 }
 
 .bookNowButton {
@@ -78,7 +88,7 @@ h1 {
 #landingPage {
     background-image: url("../images/coverphoto.png");
     background-color: #111; /* Used if the image is unavailable */
-    height: 500px;/* You must set a specified height */
+    height: 450px;/* You must set a specified height */
     width: 80%;/* Remaining width for the page (minus nav width) */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;/* Do not repeat the image */
@@ -90,9 +100,9 @@ h1 {
 #tagline{
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
-    padding: 10%; 
+    padding: 5%; 
     border-radius: 5px;
-    margin: -10%;
+    margin-top: -7%;
 }
 
 #aboutUs {
@@ -157,6 +167,7 @@ footer h5 {
     #navLogo {
         width: 30%;
         margin-top: -20%;
+        padding-left: 32%;
         padding-bottom: 15px;
     }
     #navLinks { display: none;}/* Intially hide Nav Links on mobile view */
@@ -184,7 +195,6 @@ footer h5 {
     }
     h1 {font-size: 28px;}
     h2 {font-size: 16px;}
-    #tagline{margin-top:-25%}
     .bookNowButton {width: 100%}
     #aboutUs {width: 60%;}
     section ul li {width: 100%}

@@ -6,10 +6,12 @@
     <meta name="author" content="Hector Cablitas">
     <meta charset="UTF-8">
     <meta name="description" content="Nikkojh Solutions Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link own css -->
     <link rel="stylesheet" href="../css/services.css">
     <!-- Others -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,59 +19,57 @@
     <div id="sideBar">
 
         <div id="sideBarSection">
-           <a href=""> <img id="sideBarLogo" src="../images/logo.PNG" alt="Nikkojh Solutions Inc. logo" ></a>
-            <div ID="links">
-                <p><a href=""> Home </a></p>
-                <p><a href=""> Services </a></p>
-                <p><a href=""> Contact Us </a></p>
+           <a href=""> <img id="sideBarLogo" src="../images/nikkojh-inverse.png" alt="Nikkojh Solutions Inc. logo" ></a>
+            <div ID="navLinks">
+                <p><a href="index.html"> Home </a></p>
+                <p><a href="services.html"> Services </a></p>
+                <p><a href="contactus.html"> Contact Us </a></p>
             </div>
             
-            <a href=""><img id="accountButton" src="../images/accountButton.PNG"></a>
+            <!-- <a href=""><img id="accountButton" src="../images/accountButton.PNG"></a> -->
+            <a id="menuIcon" href="javascript:void(0);" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 <div id="mainScreen">
 
-        <h3> S E R V I C E S</h3>
+        <h3>SERVICES</h3>
 
+    <div class="row">
+        <div id="leftParagraph" class="column">
 
-        <div id="leftParagraph">
-
-            <p id="leftParagraphHeader">End-to-end Integration</p>
+            <p id="leftParagraphHeader" class="paragraphHeader">End-to-end Integration</p>
             <p id="leftParagraphText">Click to edit and tell your visitors about one of the services that you offer as a consultant.
                 Explain what the service is and how you can improve their business.</p>
 
-            <p><a class="moreLink" href="">FIND OUT MORE></a></p>
+            <p><a class="moreLink" href="">FIND OUT MORE ></a></p>
         </div>
 
+        <div id="midParagraph" class="column">
+            <p id="midParagraphHeader" class="paragraphHeader">Java-based Development</p>
+            <p id="midParagraphText">Click to edit and tell your visitors about one of the services that you offer as a consultant.
+                Explain what the service is and how you can improve their business.</p>
+            <p><a class="moreLink" href="">FIND OUT MORE   ></a></p>
 
+        </div>
 
-
-    <div id="midParagraph">
-        <p id="midParagraphHeader">Java-based Development</p>
-        <p id="midParagraphText">Click to edit and tell your visitors about one of the services that you offer as a consultant.
-            Explain what the service is and how you can improve their business.</p>
-        <p><a class="moreLink" href="">FIND OUT MORE   ></a></p>
-
+        <div id="rightParagraph" class="column">
+            <p id="rightParagraphHeader" class="paragraphHeader">Digital Content Designs</p>
+            <p id="rightParagraphText">Click to edit and tell your visitors about one of the services that you offer as a consultant.
+                Explain what the service is and how you can improve their business.</p>
+            <p><a class="moreLink" href="">FIND OUT MORE   ></a></p>
+        </div>
     </div>
 
-    <div id="rightParagraph">
-        <p id="rightParagraphHeader">Digital Content Designs</p>
-        <p id="rightParagraphText">Click to edit and tell your visitors about one of the services that you offer as a consultant.
-            Explain what the service is and how you can improve their business.</p>
-        <p><a class="moreLink" href="">FIND OUT MORE   ></a></p>
-    </div>
-
+    <footer>
+        <div><h5>&copy2020 NIKKOJH SOLUTIONS INC. <br/> ALL RIGHTS RESERVED. </h5></div>
+    </footer>
+    
 </div>
 
-
-
-
-
-
-
-
-
-
+  <!-- Link JavaScript file -->
+  <script type="text/javascript" src="../js/openMenu.js"></script>
 </body>
 
 </html>

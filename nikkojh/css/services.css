@@ -4,55 +4,58 @@ html, body{
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     width: 100%;
+    letter-spacing: 0.1em;
 }
 
 #sideBar{
     height: 100%;
-    width: 23.4%;
+    width: 25.5%; /* width: 23.4%; */
     position: fixed;
     z-index: 1;
     top: 0;
     left:0;
     overflow-x: hidden;
-    padding-top: 8.05%;
-    background-color: #161616;
-    float: left;
+    /* padding-top: 8.05%; */
+    background-color:rgb(0, 0, 0);  /* background-color: #161616; */
+    /* float: left; */
 }
 
 #sideBarSection {
-    padding: 6px 8px 6px 16px;
+    padding: 26px 8px 6px 16px; /* padding: 6px 8px 6px 16px; */
     text-align: left;
     font-size: 24px;
-    color: #818181;
+    /* color: #818181; */
     font-weight: lighter;
 
 }
-#links{
+#navLinks{
     padding-top: 21px;
     line-height: 18px;
 }
 
 
-#links a {
-
+#navLinks a {
+    display: block;
     padding-left: 32px;
     font-size: 17px;
     text-decoration: none;
-    color: whitesmoke;
+    color: #818181; /* color: whitesmoke; */
 }
 
 
 
 #sideBarSection a:hover{
-    color: #818181;
+    color: #f1f1f1;/* color: #818181; */
 }
 
 
 #sideBarLogo{
-
-    padding-bottom: 30%;
-    padding-left:17.5%;
+    width: 70%;
+    padding: 20% 0% 20% 0%;
+    /* padding-bottom: 30%;
+    padding-left:17.5%; */
 }
+
 #accountButton{
     margin-top: 63px;
     margin-left: 37px;
@@ -63,18 +66,39 @@ h3{
     font-weight: bold;
     font-size: 14px;
     padding-top: 73px;
-    padding-left: 470px;
-
+    /* padding-left: 470px; */
+    letter-spacing: 0.5em;
 }
 #mainScreen {
-    padding: 0;
-    margin-left: 23.4%;
-    float: left;
-
+    /* padding: 0; */
+    /* margin-left: 23.4%; */
+    /* float: left; */
+    margin-left: 25%; /* Same as the width of the sidebar */
 }
 
+.column{
+    float: left;
+    width: 25%;
+    margin: 7% 0% 7%  5%;
+    padding-right: 2%;
+    text-align: center;
+    border-right: 1px solid #CCCCCC;
+    height: auto;
+}
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.paragraphHeader{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*
 #leftParagraph{
     margin-top: 5%;
     text-align: center;
@@ -148,27 +172,82 @@ h3{
     margin-bottom: 60px;
 
 }
+*/
 
 
 .moreLink {
-    margin-right: 45px;
+    /* margin-right: 45px;
     padding-top: 50px;
-    padding-left: 3px;
+    padding-left: 3px; */
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 15px;
-    position: relative;
+    text-align: center;     /* position: relative; */
     color: #889395;
-    border-bottom: 2px solid  #889395;
+    /* border-bottom: 2px solid  #889395; */
 }
-#rightParagraph a{
+/* #rightParagraph a{
     text-decoration: none;
 }
 #midParagraph a{
     text-decoration: none;
 }#leftParagraph a{
      text-decoration: none;
- }
+ }*/
+
+ #menuIcon i { display: none; color: rgb(0, 0, 0);} /* Hide Menu Icon on Desktop View */
+
+ footer h5 {
+    padding: 5%;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+}
+
+/* On smaller screens, where width is less than 600px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media only screen and (max-width: 600px) {
+
+    #sideBar{
+        position: fixed;
+        height: auto;/* remove this if you want "auto" height */
+        width: 100%; /* Set the width of the top menu */
+    }
+    #sideBarLogo {
+        width: 30%;
+        margin-top: -20%;
+        padding-left: 32%;
+        padding-bottom: 15px;
+    }
+    #navLinks { display: none;} /*Intially hide Nav Links on mobile view*/
+    #navLinks a {
+        text-align: center;
+        margin-left: -15%;
+    }
+    #menuIcon i {
+        display: block;
+        color: #FFFFFF;
+        font-size: 25px;
+        padding: 15px;
+        position: fixed;/* Fixed menuIcon (stay in place on scroll) */
+        z-index: 1;/* Stay on top */
+        top: 5%;/* Stay at the top */
+        right: 5%;
+    }
+    #mainScreen{
+        margin-left: -25%;
+        margin-top: 30%;
+        text-align: center;
+    }
+    #mainScreen h3{
+        padding-left: 20%;
+    }
+    .column{
+        width: 60%;
+        border: none;
+        padding-left: 25%;
+    }
+    footer {margin-left: 20%;}
+}
 
 
 
