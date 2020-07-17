@@ -86,7 +86,8 @@ h3{
 }
 
 #landingPage {
-    background-image: url("../images/coverphoto.png");
+    background-image: url("../images/techcover.jpg");
+    /* background-image: url("../images/coverphoto.png"); */
     background-color: #111; /* Used if the image is unavailable */
     height: 450px;/* You must set a specified height */
     width: 80%;/* Remaining width for the page (minus nav width) */
@@ -147,6 +148,17 @@ input[type=submit]:hover {background-image: url("../images/gethelphover.png");}
 
 #contactForm {padding: 5% 10% 5% 10%;}
 #pageLogo { width: 20%;}
+.g-recaptcha{
+    text-align:center;
+    margin-left:30%;
+}
+.success{
+    color: green;
+}
+
+.success span{
+    color: red;
+}
 /* Contact Form CSS - End */
 
 footer h5 {

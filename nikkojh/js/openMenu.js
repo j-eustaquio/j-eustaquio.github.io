@@ -14,4 +14,5 @@ function openMenu() {
     } else {
         links.style.display = "block";
     }
+
 }
