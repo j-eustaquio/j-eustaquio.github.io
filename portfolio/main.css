@@ -213,3 +213,17 @@ body {
     }
     
   }
+
+/* On desktop screen, change tagline height */
+@media only screen and (min-height: 700px) {
+
+  #welcome-section{
+    height: 63vh;
+    padding-top: 10%;
+  }
+
+  #projects{
+    padding: 7% 0% 5% 0%;
+  }
+
+}
